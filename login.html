@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calvin Klein Login</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      font-family: 'Arial', sans-serif;
+    }
+    .ck-logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .btn-ck {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    .btn-ck:hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body style="background-image: url('file:///C:/Users/ASUS/Downloads/calvin-klein-symbol.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="form-container">
+      <div class="text-center ck-logo">Calvin Klein</div>
+      <form onsubmit="return showThanksMessage(event)">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+        </div>
+        <a href="D:\web login\thank you.html"class="btn btn-primary">Submit</a>
+      </form>
+    </div>
+  </div>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <script>
+    function showThanksMessage(event) {
+      event.preventDefault(); 
+      alert('Thanks for filling out the form for Calvin Klein!');
+    }
+  </script>
+</body>
+</html>
